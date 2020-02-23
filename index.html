@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://kit.fontawesome.com/8b7809f00c.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"	crossorigin="anonymous"/>
+		<link rel="stylesheet" href="src/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<title>Weather App</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			
+
+			<div class="search">
+				<form id="form">
+				
+ 			<div class="input-group md-form form-sm form-1 pl-0" id="form">
+			<div class="input-group-prepend">
+				<span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
+					aria-hidden="true"></i></span>
+			</div>
+			<input class="form-control my-0 py-1" type="text" placeholder="Search for a City" aria-label="Search" id="city"> 
+			<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+			<br />
+			</div>
+			
+			</form>
+			</div>
+			<p id="date"> 10 February, 2020</p>
+			<p id="time">10:00 Monday</p>
+			
+			
+			
+			<div class="present_temperature" >
+			<div class="row">
+				<div class="col">
+					<img src="images/sun.png" class="sunny" alt="sunny_day" />
+				</div>
+				<div class="col">
+					<h1>LISBON</h1>
+				<br />
+				<div class="row">
+				<div class="col-CMax">
+					<h2 id="temp">20ºC | 10ºC</h2>
+				<div class="row-button">
+					<div class="col-F">
+						<button id="fht">F</button>
+					</div>
+					<div class="col-C">
+						<button id="cel">C</button>
+					</div>
+
+					
+					<br />
+				</div>
+				
+				</div>
+	<div class="button-current-location" id="location">Current Location</div>	
+				</div>
+				</div>	
+			</div>
+				<div class="w-100"></div>
+				<div class="col"></div>
+				<div class="col"><h4>A GREAT DAY TO GO FOR A WALK</h4></div>
+				</div>
+			
+			
+
+		
+
+			<div class="container">
+			<p class="forecast">NEXT DAYS:</p>
+			<div class="row">
+				<div class="col"><img src="images/sun.png" alt="sunny_day" /></div>
+				<div class="col"><img src="images/cloudy.png" id="cloudy" alt="cloudy_day"/></div>
+				<div class="col"><img src="images/sun.png"  alt="sunny_day"  /></div>
+				<div class="col"><img src="images/cloudy.png" id="cloudy" alt="cloudy_day" /></div>
+				<div class="col"><img src="images/rain.png" alt="rainy_day" /></div>
+				<div class="w-100"></div>
+				<div class="col"><p class="date">Jan 19</p></div>
+				<div class="col"><p class="date">Jan 20</p></div>
+				<div class="col"><p class="date">Jan 21</p></div>
+				<div class="col"><p class="date">Jan 22</p></div>
+				<div class="col"><p class="date">Jan 23</p></div>
+				<div class="w-100"></div>
+				<div class="col"><p class="status">SUNNY DAY</p></div>
+				<div class="col"><p class="status">CLOUDY DAY</pclass="status"></div>
+				<div class="col"><p class="status">SUNNY DAY</p></div>
+				<div class="col"><p class="status">CLOUDY DAY</p></div>
+				<div class="col"><p class="status">RAINY DAY</p></div>
+				<div class="w-100"></div>
+				<div class="col"><p>15ºC | 10ºC</p></div>
+				<div class="col"><p>16ºC | 12ºC</p></div>
+				<div class="col"><p>13ºC | 10ºC</p></div>
+				<div class="col"><p>18ºC | 8ºC</p></div>
+				<div class="col"><p>15ºC | 10ºC</p></div>
+			
+
+			</div>
+			</div>
+				<br />
+				<br />
+
+		</div>
+</div>
+
+
+
+
+
+
+
+		<script src="src/script.js"></script>
+	</body>
+</html>
