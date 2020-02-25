@@ -13,6 +13,7 @@ img {
 
 h1 {
 	color: black;
+	font-weight: bold;
 }
 
 h2 {
@@ -84,6 +85,25 @@ button {
 	margin-top: 25px;
 	margin-bottom: 0;
 }
+
+#metrics {
+	float: right;
+	margin-bottom: 100px;
+	border: solid red 1px;
+	margin-right: 115px;
+}
+
+.temperature {
+	float: left;
+	width: 50px;
+	border: solid blue 1px;
+}
+
+#celsius #farenheit {
+	font-size: 12px;
+	float: right;
+}
+
 
 #time {
 	text-align: right;
