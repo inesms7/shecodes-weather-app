@@ -3,7 +3,6 @@ h2,
 h4,
 p {
 	font-family: "Open Sans", sans-serif;
-
 }
 
 img {
@@ -13,27 +12,29 @@ img {
 }
 
 h1 {
+	font-size: 30px;
 	color: black;
 	font-weight: bold;
 	position: relative;
 	right: 170px;
+	width: 200px;
 }
 
 h2 {
 	color: #ff7d53;
 	position: relative;
 	left: 253px;
-	bottom: 100px;
+	bottom: 95px;
 	width: 50px;
 }
 
 h4 {
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	color: #ffc571;
 	font-weight: 800;
 	position: relative;
 	bottom: 150px;
-
 }
 
 button {
@@ -51,10 +52,11 @@ button {
 	padding-left: 10px;
 	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 	border-radius: 20px;
+	height: 670px;
 }
 
 .search {
-	margin-top: 50px;
+	margin-top: 10px;
 	padding-top: 50px;
 }
 
@@ -64,26 +66,21 @@ button {
 
 .present_temperature {
 	text-align: left;
-	margin-top: 10px;
 	padding-top: 20px;
 	padding-bottom: 50px;
-
 }
 
 .present_temperature h1 {
 	margin-top: 75px;
-
 }
 
 .col-C {
 	width: 40%;
-
 }
 
 .col-F {
 	margin-left: 80px;
 	width: 50%;
-
 }
 
 .row-button {
@@ -95,7 +92,6 @@ button {
 .temperature {
 	float: left;
 	width: 50px;
-
 }
 
 .button-current-location {
@@ -120,7 +116,6 @@ button {
 .col p {
 	text-align: center;
 	padding-top: 10px;
-
 }
 
 .container img {
@@ -137,7 +132,6 @@ button {
 .container p {
 	padding: 0;
 	margin: 0;
-
 }
 
 .creator {
@@ -150,10 +144,9 @@ button {
 	margin-bottom: 100px;
 	margin-right: 115px;
 	position: relative;
-	bottom: 100px;
-	right: 50px;
+	bottom: 90px;
+	right: 60px;
 }
-
 
 #fht,
 #cel {
@@ -193,7 +186,6 @@ button {
 #celsius #farenheit {
 	font-size: 12px;
 	float: right;
-
 }
 
 #time {
@@ -207,7 +199,7 @@ button {
 
 #city-weather h1 {
 	float: left;
-	width: 50%;
+	width: 100%;
 }
 
 #date {
@@ -219,10 +211,10 @@ button {
 
 #container_forecast {
 	position: relative;
-	bottom: 180px;
+	bottom: 240px;
 }
 
 #container_current_temp {
 	position: relative;
-	bottom: 80px;
+	bottom: 120px;
 }
