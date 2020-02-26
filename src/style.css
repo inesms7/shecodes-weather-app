@@ -16,7 +16,7 @@ h1 {
 	color: black;
 	font-weight: bold;
 	position: relative;
-	right: 150px;
+	right: 170px;
 }
 
 h2 {
@@ -31,7 +31,9 @@ h4 {
 	font-size: 20px;
 	color: #ffc571;
 	font-weight: 800;
-	margin-top: 50px;
+	position: relative;
+	bottom: 150px;
+
 }
 
 button {
@@ -215,3 +217,12 @@ button {
 	margin-bottom: 0;
 }
 
+#container_forecast {
+	position: relative;
+	bottom: 180px;
+}
+
+#container_current_temp {
+	position: relative;
+	bottom: 80px;
+}
