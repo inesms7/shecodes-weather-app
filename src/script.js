@@ -4,8 +4,14 @@ let paragraph = document.querySelector("#date");
 let paragraph2 = document.querySelector("#time");
 
 let hour = today.getHours();
+if (hour < 10) {
+	hour = `0${hour}`;
+}
 
 let minutes = today.getMinutes();
+if (minutes < 10) {
+	minutes = `0${minutes}`;
+}
 
 let days = ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"];
 let day = days[today.getDay()];
@@ -37,9 +43,12 @@ let apiKey = "3cfbc7eebafcf9149917ab5969c53e6c";
 
 function showTemp(response) {
 	document.querySelector("h1").innerHTML = response.data.name;
-	document.querySelector("#temp").innerHTML = Math.round(
-		response.data.main.temp
-	);
+
+	celsiusTemp = response.data.main.temp;
+
+	document.querySelector("#temp").innerHTML = Math.round(celsiusTemp);
+
+
 }
 
 function searchLocation(position) {
@@ -65,10 +74,36 @@ function getLocation(event) {
 	navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function showFahrenheit(event) {
+	event.preventDefault();
+	let celsiusToFahrenheit = document.querySelector("#temp");
+	let changeTemperature = (celsiusTemp * 9) / 5 + 32;
+	celsiusToFahrenheit.innerHTML = Math.round(changeTemperature);
+}
+
+function showCelsius(event) {
+	event.preventDefault();
+	let FahrenheiToCelsius = document.querySelector("#temp");
+	FahrenheiToCelsius.innerHTML = Math.round(celsiusTemp);
+}
+
+
+let celsiusTemp = null;
+
+
+
 let searchForm = document.querySelector("#form");
 searchForm.addEventListener("submit", searchCity);
 
-search("Rome");
 
 let currentLocationButton = document.querySelector("#location");
 currentLocationButton.addEventListener("click", getLocation);
+
+
+let changeToFahrenheit = document.querySelector("#fht");
+changeToFahrenheit.addEventListener("click", showFahrenheit);
+
+let changeToCelsius = document.querySelector("#cel");
+changeToCelsius.addEventListener("click", showCelsius);
+
+search("Rome");
