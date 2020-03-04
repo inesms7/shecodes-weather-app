@@ -14,9 +14,14 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
+
 		<link rel="stylesheet" href="src/style.css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
 			rel="stylesheet"
 		/>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -81,33 +86,12 @@
 			<div class="container" id="container_forecast">
 				<p class="forecast">NEXT DAYS:</p>
 				<div class="row">
-					<div class="col"><img src="images/sun.png" alt="sunny_day" /></div>
-					<div class="col">
-						<img src="images/cloudy.png" id="cloudy" alt="cloudy_day" />
+					<div class="col-6">
+						<img src="" id="forecast_image" />
+						<p class="date" id="forecast_date"></p>
+						<p class="status" id="forecast-status"></p>
+						<p id="forecast-temp"><strong></strong><span></span></p>
 					</div>
-					<div class="col"><img src="images/sun.png" alt="sunny_day" /></div>
-					<div class="col">
-						<img src="images/cloudy.png" id="cloudy" alt="cloudy_day" />
-					</div>
-					<div class="col"><img src="images/rain.png" alt="rainy_day" /></div>
-					<div class="w-100"></div>
-					<div class="col"><p class="date">Jan 19</p></div>
-					<div class="col"><p class="date">Jan 20</p></div>
-					<div class="col"><p class="date">Jan 21</p></div>
-					<div class="col"><p class="date">Jan 22</p></div>
-					<div class="col"><p class="date">Jan 23</p></div>
-					<div class="w-100"></div>
-					<div class="col"><p class="status">SUNNY DAY</p></div>
-					<div class="col"><p class="status">CLOUDY DAY</p></div>
-					<div class="col"><p class="status">SUNNY DAY</p></div>
-					<div class="col"><p class="status">CLOUDY DAY</p></div>
-					<div class="col"><p class="status">RAINY DAY</p></div>
-					<div class="w-100"></div>
-					<div class="col"><p>15ºC | 10ºC</p></div>
-					<div class="col"><p>16ºC | 12ºC</p></div>
-					<div class="col"><p>13ºC | 10ºC</p></div>
-					<div class="col"><p>18ºC | 8ºC</p></div>
-					<div class="col"><p>15ºC | 10ºC</p></div>
 				</div>
 			</div>
 		</div>
@@ -118,6 +102,6 @@
 			by Inês Santos
 		</p>
 
-		<script src="src/script.js"></script>
+		<script src="src/index.js"></script>
 	</body>
 </html>
