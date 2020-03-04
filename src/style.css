@@ -129,7 +129,7 @@ button {
 	font-weight: 800;
 }
 
-.container p {
+.container.forecast {
 	padding: 0;
 	margin: 0;
 }
@@ -217,4 +217,17 @@ button {
 #container_current_temp {
 	position: relative;
 	bottom: 120px;
+}
+
+.forecast-temp {
+	text-align: center;
+}
+
+.forecast-img {
+	margin-top: 5px;
+}
+
+.forecast-p {
+	margin-bottom: 5px;
+	text-align: center;
 }
