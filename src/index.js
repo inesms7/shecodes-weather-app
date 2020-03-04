@@ -89,31 +89,15 @@ function showForecast(response) {
         forecast = response.data.list[index];
         forecastElement.innerHTML += `
 
-                <div class = "col"> 
-                     <img
-                     src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
-                </div> 
-                
-                <div class="w-100"></div>
-                 <div class="col"> 
-                    <p class="date" id="forecast_date"> ${defineHours(forecast.dt * 1000)}</p>
-                </div>
-                
-                <div class="w-100">
-                </div> 
-                <div class="col"> 
-                    <p class="status"
-                        id="forecast-status"></p></div>
-                <div class="w-100"> 
-                </div> 
-                <div class="col"> 
-                    <p id="forecast-temp"><strong>
-                        ${Math.round(forecast.main.temp_max)}°</strong> 
-                        | ${Math.round(forecast.main.temp_min)}°
-                    </p>
-                </div>`
-
+                <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
+                <p class = "date" id = "forecast_date"> ${defineHours(forecast.dt * 1000)}</p> 
+                <p class="status"id="forecast-status"></p> 
+                <p id="forecast-temp"><strong>
+                    ${Math.round(forecast.main.temp_max)}° </strong>  |
+                    ${Math.round(forecast.main.temp_min)}° </p>
+`
     }
+
 }
 
 function search(city) {
