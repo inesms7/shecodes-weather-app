@@ -60,16 +60,23 @@ function defineHours(timestamp) {
 
 let apiKey = "3cfbc7eebafcf9149917ab5969c53e6c";
 
+
+
 function showTemp(response) {
 	let temperature = document.querySelector("#temp");
 	let cityElement = document.querySelector("h1");
 	let description = document.querySelector("h4");
+	let humidity = document.querySelector("#humidity");
+	let wind = document.querySelector("#wind");
 	let sun = document.querySelector("#sunny");
+
 
 	celsiusTemp = response.data.main.temp;
 
 	temperature.innerHTML = Math.round(celsiusTemp);
 	cityElement.innerHTML = response.data.name;
+	humidity.innerHTML = response.data.main.humidity;
+	wind.innerHTML = Math.round((response.data.wind.speed * 3.6));
 	description.innerHTML = response.data.weather[0].description;
 	sun.setAttribute(
 		"src",
@@ -105,8 +112,10 @@ function showForecast(response) {
 function search(city) {
 	let apiKey = "3cfbc7eebafcf9149917ab5969c53e6c";
 	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
 	axios.get(apiUrl).then(showTemp);
 
+	console.log(apiUrl);
 	apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 	axios.get(apiUrl).then(showForecast);
 }

@@ -43,6 +43,10 @@ button {
 	margin-left: auto;
 }
 
+ul {
+	list-style-type: none;
+}
+
 .wrapper {
 	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 	margin-right: auto;
@@ -230,4 +234,12 @@ button {
 .forecast-p {
 	margin-bottom: 5px;
 	text-align: center;
+}
+
+.temp-conditions {
+	font-size: 14px;
+	color: black;
+	position: relative;
+	right: 50px;
+	top: 30px;
 }
